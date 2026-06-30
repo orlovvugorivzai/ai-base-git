@@ -24,6 +24,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "АІ-база | Спільнота",
   description: "Закрита Telegram-спільнота на тему AI",
+  metadataBase: new URL("https://ai-base.one"),
+  openGraph: {
+    title: "АІ-база | Спільнота",
+    description: "Закрита Telegram-спільнота на тему AI.",
+    url: "https://ai-base.one",
+    siteName: "АІ-база",
+    locale: "uk_UA",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "АІ-база | Спільнота",
+    description: "Закрита Telegram-спільнота на тему AI.",
+  },
 };
 
 export default function RootLayout({
