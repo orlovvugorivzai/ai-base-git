@@ -12,12 +12,12 @@ export default function Header() {
       
       <div className="flex gap-4">
         <MagneticButton strength={0.15}>
-          <Link href="/rules" className="block px-5 py-2 border border-white/30 text-white/80 font-mono text-[10px] sm:text-xs tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-colors">
+          <Link href="/rules" className="block px-5 py-2 border border-kinpaku-rule text-champagne/80 font-mono text-[10px] sm:text-xs tracking-widest uppercase rounded-sm hover:bg-patina hover:border-patina hover:text-lacquer-deep transition-colors">
             Правила
           </Link>
         </MagneticButton>
         <MagneticButton strength={0.15}>
-          <a href="https://t.me/" target="_blank" className="block px-5 py-2 border border-white/30 text-white/80 font-mono text-[10px] sm:text-xs tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-colors">
+          <a href="https://t.me/" target="_blank" className="block px-5 py-2 border border-kinpaku-rule text-champagne/80 font-mono text-[10px] sm:text-xs tracking-widest uppercase rounded-sm hover:bg-patina hover:border-patina hover:text-lacquer-deep transition-colors">
             Приєднатися
           </a>
         </MagneticButton>

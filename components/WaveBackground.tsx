@@ -30,11 +30,11 @@ export default function WaveBackground() {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const draw = () => {
-      // Зафарбовуємо фон чорним для чистоти кадру
-      ctx.fillStyle = "#0a0a0a";
+      // Зафарбовуємо фон лаком
+      ctx.fillStyle = "#121111"; // lacquer-black hex approx
       ctx.fillRect(0, 0, width, height);
       
-      ctx.fillStyle = "#ffffff";
+      ctx.fillStyle = "#d4af37"; // kinpaku-gold hex approx
       
       const waveAmplitude = height * 0.25;
       const waveFrequency = 0.003;

@@ -11,19 +11,19 @@ export default function Home() {
         
         {/* Top/Center: Title Area */}
         <div className="flex flex-col items-center text-center animate-in fade-in duration-1000 px-4 mt-2 lg:mt-8">
-          <p className="text-[9px] sm:text-[10px] tracking-[0.2em] text-gray-500 uppercase mb-4 relative z-10">Neural Architecture // AI Community</p>
+          <p className="font-mono text-[9px] sm:text-[10px] tracking-[0.18em] text-kinpaku-gold uppercase mb-4 relative z-10">Neural Architecture // AI Community</p>
           
-          <h1 className="text-5xl md:text-7xl lg:text-[7rem] font-medium tracking-tighter text-white leading-none mb-4 relative z-10 mix-blend-difference">
+          <h1 className="font-display text-6xl md:text-8xl lg:text-[9rem] font-light tracking-tight text-champagne leading-none mb-4 relative z-10">
             АІ БАЗА
           </h1>
           
-          <p className="font-mono text-gray-400 text-xs sm:text-sm max-w-lg mb-8 font-light relative z-10 px-4">
+          <p className="font-body text-champagne/80 text-xs sm:text-sm max-w-lg mb-8 relative z-10 px-4">
             Automated entropy reduction for closed communities. <br className="hidden sm:block"/>
             Transform unstructured chaos into linear logic.
           </p>
           
           <MagneticButton>
-            <a href="https://t.me/" target="_blank" className="block px-6 py-3 border border-white/30 text-white text-xs tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-colors relative z-10 backdrop-blur-md bg-black/20">
+            <a href="https://t.me/" target="_blank" className="block px-8 py-3 bg-kinpaku-gold text-lacquer-deep border border-kinpaku-gold text-sm font-medium tracking-wide uppercase rounded-sm hover:bg-kinpaku-pale transition-colors relative z-10 shadow-[0_18px_48px_oklch(2%_0.004_95_/_0.4)]">
               Deploy Instance &rarr;
             </a>
           </MagneticButton>
