@@ -18,7 +18,7 @@ export default function BentoCard({ title, href, colSpan = 1, isPrimary = false 
       >
         <div className="absolute top-0 left-0 w-1 h-full bg-[#00ffcc]"></div>
         <h2 className="text-xl font-bold text-[#00ffcc] uppercase tracking-widest mb-2">{title}_</h2>
-        <p className="text-[#00ffcc]/60 font-mono text-xs mt-4 group-hover:animate-pulse">> init_sequence()</p>
+        <p className="text-[#00ffcc]/60 font-mono text-xs mt-4 group-hover:animate-pulse">&gt; init_sequence()</p>
       </Link>
     );
   }
@@ -29,7 +29,7 @@ export default function BentoCard({ title, href, colSpan = 1, isPrimary = false 
       className={`block p-6 rounded-none bg-black border border-white/20 relative overflow-hidden hover:border-[#00ffcc] hover:shadow-[0_0_15px_rgba(0,255,204,0.15)] group transition-all ${spanClass}`}
     >
       <h2 className="text-xl font-bold text-white uppercase tracking-wider mb-2">{title}</h2>
-      <p className="text-gray-500 font-mono text-xs mt-4 opacity-0 group-hover:opacity-100 transition-opacity">> system.access()</p>
+      <p className="text-gray-500 font-mono text-xs mt-4 opacity-0 group-hover:opacity-100 transition-opacity">&gt; system.access()</p>
     </Link>
   );
 }
