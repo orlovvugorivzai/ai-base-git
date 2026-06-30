@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="uk" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Варіантів Редизайну - АІ-база</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: '#00ffcc',
+            dark: '#0a0a0a',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #050505; color: white; }
+    .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); }
+    .glass:hover { background: rgba(255,255,255,0.08); border: 1px solid rgba(0, 255, 204, 0.4); }
+    .glow-hover:hover { box-shadow: 0 0 20px rgba(0, 255, 204, 0.2); }
+    .section-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #00ffcc; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid #333; padding-bottom: 0.5rem; }
+    .wrapper { max-w-5xl; margin: 0 auto; padding: 4rem 1rem; }
+    .group:hover .group-hover\:dim { opacity: 0.3; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <div class="max-w-5xl mx-auto py-10 px-4">
+    <h1 class="text-4xl font-bold text-center mb-4">10 Варіантів Дизайну Головної Сітки</h1>
+    <p class="text-gray-400 text-center mb-16">Прокрутіть униз, щоб подивитися різні стилі подачі гілок нашої спільноти.</p>
+
+    <!-- Варіант 1: Класичний Bento (Базовий) -->
+    <div class="mb-24">
+      <h2 class="section-title">1. Класичний Матовий Bento (Покращений поточний)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="col-span-1 md:col-span-2 row-span-2 glass rounded-3xl p-6 transition-all hover:-translate-y-1">
+          <h3 class="text-2xl font-bold mb-2">📌 Правила</h3>
+          <p class="text-gray-400">Головні закони спільноти. Повага та жодної політики.</p>
+        </div>
+        <div class="glass rounded-3xl p-6 transition-all hover:-translate-y-1">
+          <h3 class="text-lg font-bold">Networking</h3>
+        </div>
+        <div class="glass rounded-3xl p-6 transition-all hover:-translate-y-1">
+          <h3 class="text-lg font-bold">AI Гайди</h3>
+        </div>
+        <div class="col-span-1 md:col-span-2 glass rounded-3xl p-6 transition-all hover:-translate-y-1">
+          <h3 class="text-lg font-bold">Геми GitHub</h3>
+        </div>
+        <div class="glass rounded-3xl p-6 transition-all hover:-translate-y-1">
+          <h3 class="text-lg font-bold">ГЕРМЕС</h3>
+        </div>
+        <div class="glass rounded-3xl p-6 transition-all hover:-translate-y-1">
+          <h3 class="text-lg font-bold">Щитпостинг</h3>
+        </div>
+        <div class="col-span-1 md:col-span-2 glass rounded-3xl p-6 transition-all hover:-translate-y-1">
+          <h3 class="text-lg font-bold">Піратська бухта</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Варіант 2: Cyberpunk Neon -->
+    <div class="mb-24">
+      <h2 class="section-title">2. Неоновий Cyberpunk (Контрастний)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border border-[#00ffcc] bg-black p-6 rounded-none relative overflow-hidden group hover:bg-[#00ffcc]/10 transition-colors">
+          <div class="absolute top-0 left-0 w-1 h-full bg-[#00ffcc]"></div>
+          <h3 class="text-xl font-bold text-[#00ffcc] uppercase tracking-widest mb-2">Правила_</h3>
+          <p class="text-gray-500 font-mono text-sm">init_rules_sequence</p>
+        </div>
+        <div class="border border-white/20 bg-black p-6 rounded-none relative overflow-hidden hover:border-[#00ffcc] transition-colors">
+          <h3 class="text-xl font-bold uppercase mb-2">Networking</h3>
+        </div>
+        <div class="border border-white/20 bg-black p-6 rounded-none relative overflow-hidden hover:border-[#00ffcc] transition-colors">
+          <h3 class="text-xl font-bold uppercase mb-2">AI Гайди</h3>
+        </div>
+        <div class="border border-white/20 bg-black p-6 rounded-none relative overflow-hidden hover:border-[#00ffcc] transition-colors">
+          <h3 class="text-xl font-bold uppercase mb-2">Геми GitHub</h3>
+        </div>
+        <div class="border border-white/20 bg-black p-6 rounded-none relative overflow-hidden hover:border-[#00ffcc] transition-colors">
+          <h3 class="text-xl font-bold uppercase mb-2">Щитпостинг</h3>
+        </div>
+        <div class="border border-white/20 bg-black p-6 rounded-none relative overflow-hidden hover:border-[#00ffcc] transition-colors">
+          <h3 class="text-xl font-bold uppercase mb-2">Піратська бухта</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Варіант 3: Мінімалізм (Apple Style) -->
+    <div class="mb-24">
+      <h2 class="section-title">3. Суворий Мінімалізм (Монохром)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+        <div class="bg-zinc-900 hover:bg-zinc-800 p-8 rounded-2xl col-span-2 row-span-2 flex flex-col justify-between transition-colors">
+          <h3 class="text-3xl font-semibold">Правила</h3>
+          <p class="text-zinc-500 mt-10">Прочитайте перед тим, як писати.</p>
+        </div>
+        <div class="bg-zinc-900 hover:bg-zinc-800 p-6 rounded-2xl transition-colors aspect-square flex flex-col justify-end">
+          <h3 class="text-lg font-medium">Networking</h3>
+        </div>
+        <div class="bg-zinc-900 hover:bg-zinc-800 p-6 rounded-2xl transition-colors aspect-square flex flex-col justify-end">
+          <h3 class="text-lg font-medium">AI Гайди</h3>
+        </div>
+        <div class="bg-zinc-900 hover:bg-zinc-800 p-6 rounded-2xl transition-colors col-span-2 flex justify-between items-center">
+          <h3 class="text-lg font-medium">Геми GitHub</h3>
+          <span class="text-zinc-600">&rarr;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Варіант 4: Картки з Градієнтами -->
+    <div class="mb-24">
+      <h2 class="section-title">4. Кольорові Градієнти (М'який AI)</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="rounded-3xl p-8 bg-gradient-to-br from-indigo-900/50 to-purple-900/50 border border-white/10 hover:scale-105 transition-transform cursor-pointer">
+          <h3 class="text-2xl font-bold mb-2">Правила</h3>
+        </div>
+        <div class="rounded-3xl p-8 bg-gradient-to-br from-blue-900/50 to-cyan-900/50 border border-white/10 hover:scale-105 transition-transform cursor-pointer">
+          <h3 class="text-2xl font-bold mb-2">Networking</h3>
+        </div>
+        <div class="rounded-3xl p-8 bg-gradient-to-br from-emerald-900/50 to-teal-900/50 border border-white/10 hover:scale-105 transition-transform cursor-pointer">
+          <h3 class="text-2xl font-bold mb-2">AI Гайди</h3>
+        </div>
+        <div class="rounded-3xl p-8 bg-gradient-to-br from-orange-900/50 to-red-900/50 border border-white/10 hover:scale-105 transition-transform cursor-pointer md:col-span-2">
+          <h3 class="text-2xl font-bold mb-2">Геми GitHub & ГЕРМЕС</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Варіант 5: Широкі Смуги (Лінійний) -->
+    <div class="mb-24">
+      <h2 class="section-title">5. Широкі Інтерактивні Смуги</h2>
+      <div class="flex flex-col space-y-2 group">
+        <div class="flex items-center justify-between p-6 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition-colors cursor-pointer group-hover:dim">
+          <h3 class="text-2xl font-bold">📌 Правила</h3>
+          <p class="text-sm text-gray-500 hidden md:block">Основа спільноти</p>
+        </div>
+        <div class="flex items-center justify-between p-6 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition-colors cursor-pointer group-hover:dim">
+          <h3 class="text-xl font-semibold">🤝 Networking</h3>
+        </div>
+        <div class="flex items-center justify-between p-6 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition-colors cursor-pointer group-hover:dim">
+          <h3 class="text-xl font-semibold">🧠 AI Гайди</h3>
+        </div>
+        <div class="flex items-center justify-between p-6 bg-white/5 border border-white/5 rounded-xl hover:bg-white/10 transition-colors cursor-pointer group-hover:dim">
+          <h3 class="text-xl font-semibold">💎 Геми GitHub</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Варіант 6: Masonry (Асиметричний Pinterest-стиль) -->
+    <div class="mb-24">
+      <h2 class="section-title">6. Masonry Grid (Картки різної висоти)</h2>
+      <div class="columns-1 md:columns-3 gap-6 space-y-6">
+        <div class="bg-[#111] p-6 rounded-2xl border border-white/10 break-inside-avoid">
+          <h3 class="text-2xl font-bold mb-4">Правила</h3>
+          <p class="text-sm text-gray-400">Тут багато тексту про те, що не можна постити рефки без попередження, політику та інші важливі моменти.</p>
+        </div>
+        <div class="bg-[#111] p-6 rounded-2xl border border-white/10 break-inside-avoid min-h-[200px] flex items-end">
+          <h3 class="text-xl font-bold">Networking</h3>
+        </div>
+        <div class="bg-[#111] p-6 rounded-2xl border border-[#00ffcc]/30 break-inside-avoid">
+          <h3 class="text-xl font-bold text-[#00ffcc]">AI Гайди</h3>
+          <p class="text-xs text-gray-500 mt-2">Ексклюзивні джейлбрейки</p>
+        </div>
+        <div class="bg-[#111] p-6 rounded-2xl border border-white/10 break-inside-avoid min-h-[150px]">
+          <h3 class="text-xl font-bold">Піратська бухта</h3>
+        </div>
+        <div class="bg-[#111] p-6 rounded-2xl border border-white/10 break-inside-avoid min-h-[250px] flex items-start">
+          <h3 class="text-xl font-bold">Геми GitHub</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Варіант 7: Контурний світіння (Outline Glow) -->
+    <div class="mb-24">
+      <h2 class="section-title">7. Скляні Контури (Тільки обведення)</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="p-6 rounded-xl border-2 border-white/20 hover:border-[#00ffcc] hover:shadow-[0_0_20px_rgba(0,255,204,0.3)] transition-all cursor-pointer bg-transparent text-center">
+          <h3 class="text-lg font-bold">Правила</h3>
+        </div>
+        <div class="p-6 rounded-xl border-2 border-white/20 hover:border-[#00ffcc] hover:shadow-[0_0_20px_rgba(0,255,204,0.3)] transition-all cursor-pointer bg-transparent text-center">
+          <h3 class="text-lg font-bold">Networking</h3>
+        </div>
+        <div class="p-6 rounded-xl border-2 border-white/20 hover:border-[#00ffcc] hover:shadow-[0_0_20px_rgba(0,255,204,0.3)] transition-all cursor-pointer bg-transparent text-center">
+          <h3 class="text-lg font-bold">AI Гайди</h3>
+        </div>
+        <div class="p-6 rounded-xl border-2 border-white/20 hover:border-[#00ffcc] hover:shadow-[0_0_20px_rgba(0,255,204,0.3)] transition-all cursor-pointer bg-transparent text-center">
+          <h3 class="text-lg font-bold">Геми GitHub</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Варіант 8: Великі зображення / Типографіка -->
+    <div class="mb-24">
+      <h2 class="section-title">8. Типографічний акцент (Massive Fonts)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white text-black p-10 rounded-2xl hover:scale-[1.02] transition-transform">
+          <h3 class="text-5xl font-black uppercase tracking-tighter">Правила</h3>
+          <p class="mt-4 font-medium">Читати всім.</p>
+        </div>
+        <div class="grid grid-rows-2 gap-4">
+          <div class="bg-zinc-800 text-white p-8 rounded-2xl hover:scale-[1.02] transition-transform">
+            <h3 class="text-3xl font-bold tracking-tighter">Networking</h3>
+          </div>
+          <div class="flex gap-4">
+            <div class="bg-[#00ffcc] text-black p-6 rounded-2xl w-full hover:scale-[1.02] transition-transform">
+              <h3 class="text-xl font-bold">Гайди</h3>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-700 text-white p-6 rounded-2xl w-full hover:scale-[1.02] transition-transform">
+              <h3 class="text-xl font-bold">GitHub</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Варіант 9: Плаваючі Бульбашки (Pill Shapes) -->
+    <div class="mb-24">
+      <h2 class="section-title">9. Плаваючі теги (Pill Style)</h2>
+      <div class="flex flex-wrap gap-4 justify-center py-10">
+        <div class="px-8 py-4 bg-white/10 hover:bg-[#00ffcc] hover:text-black rounded-full text-xl font-semibold transition-all cursor-pointer">📌 Правила</div>
+        <div class="px-8 py-4 bg-white/10 hover:bg-[#00ffcc] hover:text-black rounded-full text-xl font-semibold transition-all cursor-pointer">🤝 Networking</div>
+        <div class="px-8 py-4 bg-white/10 hover:bg-[#00ffcc] hover:text-black rounded-full text-xl font-semibold transition-all cursor-pointer">🧠 AI Гайди</div>
+        <div class="px-8 py-4 bg-white/10 hover:bg-[#00ffcc] hover:text-black rounded-full text-xl font-semibold transition-all cursor-pointer">🤖 AI-сервіси</div>
+        <div class="px-8 py-4 bg-white/10 hover:bg-[#00ffcc] hover:text-black rounded-full text-xl font-semibold transition-all cursor-pointer">💎 Геми GitHub</div>
+        <div class="px-8 py-4 bg-white/10 hover:bg-[#00ffcc] hover:text-black rounded-full text-xl font-semibold transition-all cursor-pointer">🗑 Щитпостинг</div>
+        <div class="px-8 py-4 bg-white/10 hover:bg-[#00ffcc] hover:text-black rounded-full text-xl font-semibold transition-all cursor-pointer">🦅 ГЕРМЕС</div>
+      </div>
+    </div>
+
+    <!-- Варіант 10: Скляні Панелі з накладанням -->
+    <div class="mb-24">
+      <h2 class="section-title">10. Тривимірні Скляні Панелі (3D Effect)</h2>
+      <div class="relative h-[400px] w-full flex justify-center items-center">
+        <!-- Це просто концепт для візуалізації -->
+        <div class="absolute z-30 transform hover:-translate-y-4 hover:scale-105 transition-all duration-500 bg-black/60 backdrop-blur-xl border border-white/20 p-8 rounded-3xl w-64 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+          <h3 class="text-2xl font-bold text-white">Правила</h3>
+        </div>
+        <div class="absolute z-20 -left-10 md:left-20 transform -rotate-6 hover:rotate-0 hover:z-40 transition-all duration-500 bg-[#00ffcc]/10 backdrop-blur-xl border border-[#00ffcc]/30 p-8 rounded-3xl w-64 shadow-xl">
+          <h3 class="text-xl font-bold text-[#00ffcc]">Networking</h3>
+        </div>
+        <div class="absolute z-10 -right-10 md:right-20 transform rotate-6 hover:rotate-0 hover:z-40 transition-all duration-500 bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl w-64 shadow-xl">
+          <h3 class="text-xl font-bold text-gray-300">AI Гайди</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

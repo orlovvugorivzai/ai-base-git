@@ -10,8 +10,8 @@ export default function Home() {
         <p className="text-xl text-gray-400">Закрита AI-спільнота. <span className="text-white font-bold">51 учасник</span>.</p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <BentoCard title="Правила" href="/rules" colSpan={2} />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <BentoCard title="Правила" href="/rules" colSpan={2} isPrimary={true} />
         <BentoCard title="Networking" href="/networking" />
         <BentoCard title="AI Гайди" href="/guides" />
         <BentoCard title="AI-сервіси" href="/services" />
