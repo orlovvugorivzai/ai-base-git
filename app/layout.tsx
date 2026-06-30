@@ -39,7 +39,7 @@ export default function RootLayout({
           duration={500}
         >
           <Header />
-          <main className="flex-1 pt-24 px-4 max-w-5xl mx-auto w-full">{children}</main>
+          <main className="flex-1 flex flex-col w-full relative">{children}</main>
           <Footer />
         </ClickSpark>
       </body>
