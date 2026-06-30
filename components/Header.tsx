@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MagneticButton from '@/components/MagneticButton';
 
 export default function Header() {
   return (
@@ -10,12 +11,16 @@ export default function Header() {
       </Link>
       
       <div className="flex gap-4">
-        <Link href="/rules" className="px-6 py-2 border border-white/30 text-white/80 text-[10px] sm:text-xs tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-all">
-          Правила
-        </Link>
-        <a href="https://t.me/" target="_blank" className="px-6 py-2 border border-white/30 text-white/80 text-[10px] sm:text-xs tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-all">
-          Приєднатися
-        </a>
+        <MagneticButton strength={0.15}>
+          <Link href="/rules" className="block px-5 py-2 border border-white/30 text-white/80 font-mono text-[10px] sm:text-xs tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-colors">
+            Правила
+          </Link>
+        </MagneticButton>
+        <MagneticButton strength={0.15}>
+          <a href="https://t.me/" target="_blank" className="block px-5 py-2 border border-white/30 text-white/80 font-mono text-[10px] sm:text-xs tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-colors">
+            Приєднатися
+          </a>
+        </MagneticButton>
       </div>
     </header>
   );

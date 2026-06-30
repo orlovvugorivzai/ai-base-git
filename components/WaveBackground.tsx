@@ -27,6 +27,8 @@ export default function WaveBackground() {
     let time = 0;
     const spacing = 12; // Відстань між квадратиками
 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     const draw = () => {
       // Зафарбовуємо фон чорним для чистоти кадру
       ctx.fillStyle = "#0a0a0a";
@@ -64,8 +66,14 @@ export default function WaveBackground() {
       }
       
       ctx.globalAlpha = 1.0;
+      
+      if (prefersReducedMotion) {
+        // Якщо увімкнено reduced motion - малюємо лише один статичний кадр
+        return;
+      }
+      
       time += 0.015;
-      requestAnimationFrame(draw);
+      animationId = requestAnimationFrame(draw);
     };
 
     let animationId = requestAnimationFrame(draw);

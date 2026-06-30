@@ -1,5 +1,6 @@
 import BentoCard from '@/components/BentoCard'
 import WaveBackground from '@/components/WaveBackground'
+import MagneticButton from '@/components/MagneticButton'
 
 export default function Home() {
   return (
@@ -16,14 +17,16 @@ export default function Home() {
             АІ БАЗА
           </h1>
           
-          <p className="text-gray-400 text-xs sm:text-sm max-w-lg mb-6 font-light relative z-10 px-4">
+          <p className="font-mono text-gray-400 text-xs sm:text-sm max-w-lg mb-8 font-light relative z-10 px-4">
             Automated entropy reduction for closed communities. <br className="hidden sm:block"/>
             Transform unstructured chaos into linear logic.
           </p>
           
-          <a href="https://t.me/" target="_blank" className="px-6 py-2 border border-white/30 text-white text-xs tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-all relative z-10 backdrop-blur-md bg-black/20">
-            Deploy Instance &rarr;
-          </a>
+          <MagneticButton>
+            <a href="https://t.me/" target="_blank" className="block px-6 py-3 border border-white/30 text-white text-xs tracking-widest uppercase rounded-full hover:bg-white hover:text-black transition-colors relative z-10 backdrop-blur-md bg-black/20">
+              Deploy Instance &rarr;
+            </a>
+          </MagneticButton>
         </div>
 
         {/* Bottom: Bento Grid (Fit on same screen) */}
